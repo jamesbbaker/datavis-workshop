@@ -1,17 +1,21 @@
 // See https://observablehq.com/framework/config for documentation.
+//
+// GitHub Pages: https://<github-username>.github.io/<repo>/
+// `base` must be "/<repo>/" only (matches the repo name, not your uni id).
+// If your GitHub username is jb5069 and the repo is datavis-workshop:
+//   https://jb5069.github.io/datavis-workshop/
 export default {
-  title: "Gapminder Studio",
+  title: "Datavis Workshop",
 
   theme: "parchment",
 
+  // Only the pages required for the workshop handout
   pages: [
     {
-      name: "Examples",
+      name: "Workshop",
       pages: [
-        { name: "Home", path: "/" },
-        { name: "Dashboard", path: "/example-dashboard" },
-        { name: "Report", path: "/example-report" },
-        { name: "Project Sketches", path: "/project" }
+        { name: "Project Sketches", path: "/project" },
+        { name: "Example report", path: "/example-report" }
       ]
     }
   ],
@@ -20,8 +24,7 @@ export default {
 
   root: "src",
 
-  footer: "Built with Observable Framework.",
+  footer: "",
 
-  // Required for GitHub Pages when the site is served from /repo-name/ (not a user site).
   base: "/datavis-workshop/"
 };
