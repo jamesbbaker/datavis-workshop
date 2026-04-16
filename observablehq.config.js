@@ -20,5 +20,8 @@ export default {
 
   root: "src",
 
-  footer: "Built with Observable Framework."
+  footer: "Built with Observable Framework.",
+
+  // For GitHub project pages (not a user site), uncomment and set your repo name:
+  // base: "/your-repo-name/"
 };

@@ -125,13 +125,24 @@ const merged = gdp2010
 ```
 
 ```js
+const dotStroke = Inputs.radio(
+  new Map([
+    ["#b42318", "Brick"],
+    ["#1754d8", "Cobalt"],
+    ["#047857", "Pine"]
+  ]),
+  {label: "Dot outline color", value: "#1754d8"}
+);
+```
+
+```js
 const metricChoice = Inputs.radio(
   new Map([
     ["gdp", "GDP per capita"],
     ["life", "Life expectancy"],
     ["pop", "Population"]
   ]),
-  {label: "Color by metric", value: "gdp"}
+  {label: "Fill by metric", value: "gdp"}
 );
 ```
 
@@ -170,8 +181,8 @@ function scatter(data, {width} = {}) {
         y: "life",
         fill: "metric",
         r: (d) => Math.sqrt(d.pop),
-        stroke: "var(--theme-background)",
-        strokeWidth: 0.5,
+        stroke: dotStroke,
+        strokeWidth: 0.85,
         tip: true
       })
     ]
