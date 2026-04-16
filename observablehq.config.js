@@ -22,6 +22,6 @@ export default {
 
   footer: "Built with Observable Framework.",
 
-  // For GitHub project pages (not a user site), uncomment and set your repo name:
-  // base: "/your-repo-name/"
+  // Required for GitHub Pages when the site is served from /repo-name/ (not a user site).
+  base: "/datavis-workshop/"
 };
