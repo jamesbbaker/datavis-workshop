@@ -1,0 +1,36 @@
+=== npm install ===
+
+added 1 package, removed 3 packages, and audited 266 packages in 578ms
+
+58 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm_install_exit=0
+
+=== npm run build ===
+build /_npm/delaunator@5.1.0/_esm.js → dist/_npm/delaunator@5.1.0/d4ec0aa1.js
+build /_npm/binary-search-bounds@2.0.5/_esm.js → dist/_npm/binary-search-bounds@2.0.5/cbf6ba23.js
+build /_npm/robust-predicates@3.0.3/_esm.js → dist/_npm/robust-predicates@3.0.3/42820bfa.js
+build /_observablehq/stdlib/inputs.js → dist/_observablehq/stdlib/inputs.7bb53a4e.js
+build /_observablehq/stdlib/zip.js → dist/_observablehq/stdlib/zip.1f555417.js
+build /_npm/htl@0.3.1/_esm.js → dist/_npm/htl@0.3.1/72f4716c.js
+build /_npm/jszip@3.10.1/_esm.js → dist/_npm/jszip@3.10.1/74d78a45.js
+copy src/components/timeline.js → dist/_import/components/timeline.c26a9802.js
+render /example-dashboard → dist/example-dashboard.html
+render /example-report → dist/example-report.html
+render /index → dist/index.html
+render /project → dist/project.html
+
+┌ (4 pages)                    Page      Imports        Files
+├── example-dashboard         11 kB       580 kB       996 kB
+├── example-report             8 kB       576 kB        25 kB
+├── index                      4 kB        51 kB        25 kB
+└── project                   13 kB       735 kB       669 kB
+
+3 links validated
+npm_build_exit=0
+
+=== git operations ===
+true
+git_check_exit=0
